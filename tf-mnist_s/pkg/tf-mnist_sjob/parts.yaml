@@ -1,0 +1,36 @@
+{ 
+   "name": "tf-mnistjob",
+   "apiVersion": "0.0.1",
+   "kind": "ksonnet.io/parts",
+   "description": "Prototype for Tensorflow MNIST job\n",
+   "author": "Johnu George <johnugeo@cisco.com>",
+   "contributors": [
+      {
+         "name": "Johnu George",
+         "email": "johnugeo@cisco.com"
+      }
+   ],
+   "repository": {
+      "type": "git",
+      "url": "https://github.com/sreejithmm/KFLabSreejith"
+   },
+   "bugs": {
+      "url": "https://github.com/sreejithmm/KFLabSreejith/issues"
+   },
+   "keywords": [
+      "kubeflow",
+      "tensorflow",
+      "database"
+   ],
+   "quickStart": {
+      "prototype": "io.ksonnet.pkg.tf-mnistjob",
+      "componentName": "tf-mnist_sjob",
+      "flags": {
+         "name": "tf-mnis_stjob",
+         "namespace": "default"
+      },
+      "comment": "Tensorflow MNIST job"
+   },
+   "license": "Apache 2.0"
+}
+

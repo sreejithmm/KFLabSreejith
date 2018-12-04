@@ -1,0 +1,36 @@
+{ 
+   "name": "nfs-server",
+   "apiVersion": "0.0.1",
+   "kind": "ksonnet.io/parts",
+   "description": "Prototype for creating a NFS server\n",
+   "author": "Johnu George <johnugeo@cisco.com>",
+   "contributors": [
+      {
+         "name": "Johnu George",
+         "email": "johnugeo@cisco.com"
+      }
+   ],
+   "repository": {
+      "type": "git",
+      "url": ""https://github.com/sreejithmm/KFLabSreejith
+   },
+   "bugs": {
+      "url": "https://github.com/sreejithmm/KFLabSreejith/issues"
+   },
+   "keywords": [
+      "kubeflow",
+      "tensorflow",
+      "database"
+   ],
+   "quickStart": {
+      "prototype": "io.ksonnet.pkg.nfs-server",
+      "componentName": "nfs-server_s",
+      "flags": {
+         "name": "nfs-server_s",
+         "namespace": "default"
+      },
+      "comment": "Create NFS server"
+   },
+   "license": "Apache 2.0"
+}
+
