@@ -1,7 +1,7 @@
 #!/usr/local/env bash
 
 ## Namespace to be used in k8s cluster for your application
-NAMESPACE=kubeflow
+NAMESPACE=kubeflowsreejith
 
 ## Ksonnet app name
 APP_NAME=mnist
@@ -28,8 +28,12 @@ TF_EXPORT_DIR=${NFS_MODEL_PATH}
 # If you want to use your own image,
 # make sure you have a dockerhub account and change
 # DOCKER_BASE_URL and IMAGE below.
-DOCKER_BASE_URL=gcr.io/cpsg-ai-demo
-IMAGE=${DOCKER_BASE_URL}/tf-mnist-demo:v1
+#DOCKER_BASE_URL=gcr.io/cpsg-ai-demo
+DOCKER_BASE_URL=docker.io/sreejithmm
+IMAGE=${DOCKER_BASE_URL}/tf-mnist-demo-sreejith_v6
+#DOCKER_BASE_URL=gcr.io/cpsg-ai-demo
+#IMAGE=${DOCKER_BASE_URL}/tf-mnist-demo:v1
+
 #docker build . --no-cache  -f Dockerfile -t ${IMAGE}
 #docker push ${IMAGE}
 
@@ -39,8 +43,8 @@ PORT=9000
 export TF_MODEL_SERVER_PORT=${PORT}
 
 # Used in webapp.bash
-DOCKER_HUB=gcr.io
-DOCKER_USERNAME=cpsg-ai-demo
+DOCKER_HUB=docker.io
+DOCKER_USERNAME=sreejithmm
 DOCKER_IMAGE=mnist-client
 WEBAPP_FOLDER=webapp
 

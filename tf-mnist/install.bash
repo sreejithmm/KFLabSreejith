@@ -48,16 +48,16 @@ ks apply ${KF_ENV} -c tf-job-operator
 
 # If you have already setup a NFS server, you can skip this step and proceed to
 # step 8. Set `NFS_SERVER_IP`to ip of your NFS server
-ks generate nfs-server nfs-server
-ks apply ${KF_ENV} -c nfs-server
+ks generate nfs-server nfs-server-sreejith
+ks apply ${KF_ENV} -c nfs-server-sreejith
 
 #8. Deploy NFS PV/PVC in the k8s cluster **(Optional step)**
-
+echo "created the nfs-server"
 # If you have already created NFS PersistentVolume and PersistentVolumeClaim,
 # you can skip this step and proceed to step 9.
-NFS_SERVER_IP=`kubectl -n ${NAMESPACE} get svc/nfs-server  --output=jsonpath={.spec.clusterIP}`
+NFS_SERVER_IP=`kubectl -n ${NAMESPACE} get svc/nfs-server-sreejith  --output=jsonpath={.spec.clusterIP}`
 echo "NFS Server IP: ${NFS_SERVER_IP}"
-ks generate nfs-volume nfs-volume  --name=${NFS_PVC_NAME}  --nfs_server_ip=${NFS_SERVER_IP}
+ks generate nfs-volume nfs-volume   --name=${NFS_PVC_NAME}  --nfs_server_ip=${NFS_SERVER_IP}
 ks apply ${KF_ENV} -c nfs-volume
 
 #### Installation is complete now ####
