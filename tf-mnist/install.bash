@@ -30,9 +30,9 @@ ks registry add sreejithmm github.com/sreejithmm/KFLabSreejith/tree/${SREEJITHMM
 ks pkg install kubeflow/core@${KUBEFLOW_GITHUB_VERSION}
 ks pkg install kubeflow/tf-serving@${KUBEFLOW_GITHUB_VERSION}
 
-ks pkg install ciscoai/nfs-server@${CISCOAI_GITHUB_VERSION}
-ks pkg install ciscoai/nfs-volume@${CISCOAI_GITHUB_VERSION}
-ks pkg install ciscoai/tf-${APP_NAME}job@${CISCOAI_GITHUB_VERSION}
+ks pkg install sreejithmm/nfs-server@${SREEJITHMM_GITHUB_VERSION}
+ks pkg install sreejithmm/nfs-volume@${SREEJITHMM_GITHUB_VERSION}
+ks pkg install sreejithmm/tf-${APP_NAME}job@${SREEJITHMM_GITHUB_VERSION}
 
 #6. Deploy kubeflow core components to K8s cluster.
 

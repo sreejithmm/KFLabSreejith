@@ -12,10 +12,10 @@
    ],
    "repository": {
       "type": "git",
-      "url": "https://github.com/CiscoAI/kubeflow-examples"
+      "url": "https://github.com/sreejithmm/KFLabSreejith"
    },
    "bugs": {
-      "url": "https://github.com/CiscoAI/kubeflow-examples/issues"
+      "url": "https://github.com/sreejithmm/KFLabSreejith/issues"
    },
    "keywords": [
       "kubeflow",
