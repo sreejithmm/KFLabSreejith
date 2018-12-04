@@ -1,10 +1,10 @@
 #!/usr/local/env bash
 
 ## Namespace to be used in k8s cluster for your application
-NAMESPACE=kubeflow_s
+NAMESPACE=kubeflow
 
 ## Ksonnet app name
-APP_NAME=mnist_s
+APP_NAME=mnist
 
 ## GITHUB version for official kubeflow components
 KUBEFLOW_GITHUB_VERSION=v0.3.0-rc.3
