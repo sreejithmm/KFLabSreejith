@@ -43,8 +43,8 @@ PORT=9000
 export TF_MODEL_SERVER_PORT=${PORT}
 
 # Used in webapp.bash
-DOCKER_HUB=docker.io
-DOCKER_USERNAME=sreejithmm
-DOCKER_IMAGE=mnist-client
-WEBAPP_FOLDER=webapp
+#DOCKER_HUB=docker.io
+#DOCKER_USERNAME=sreejithmm
+#DOCKER_IMAGE=mnist-client
+#WEBAPP_FOLDER=webapp
 
